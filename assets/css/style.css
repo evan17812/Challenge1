@@ -1,29 +1,35 @@
+/* Set overall boxing */
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
+/* Set overall color*/
 body {
     background-color: #d9dcd6;
 }
 
+/* Set the basics of the header*/
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
+/* This is to have the title and links into a uniform line through inline as well as all the fonts sequentially if the previous doesn't work*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.seo {
+/* This is to change the color of seo in Title head Horiseon*/
+.mid-header {
     color: #d9dcd6;
 }
 
-.header div {
+/* This is to set the links to the top right position with fonts*/
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -31,14 +37,13 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
+/* This is to make the 3 links uniform in a line*/
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
 
 a {
     color: #ffffff;
@@ -49,6 +54,7 @@ p {
     font-size: 16px;
 }
 
+/* This plants the huge picture in the middle and sets the bondaries*/
 .hero {
     height: 800px;
     width: 100%;
@@ -68,12 +74,14 @@ p {
     margin-left: 25px;
 }
 
-.content {
+/* This allows the two blocks to be side by side*/
+.category {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* This sets the basics of the side bar*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,55 +93,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* This sets the basics for the right sections*/
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* This edits all 3 right sections h3 header*/
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* This edits all 3 right sections pictures*/
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* This sets the basics for the left sections*/
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -142,51 +122,18 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* This edits all 3 left sections pictures*/
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img  {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* This edits all 3 left sections h2 header*/
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* This sets the basics for the footer at the end */
 .footer {
     padding: 30px;
     clear: both;
@@ -194,6 +141,7 @@ p {
     text-align: center;
 }
 
+/* This makes the h2 in the footer only to change font size */
 .footer h2 {
     font-size: 20px;
 }
